@@ -1,0 +1,11 @@
+#!/bin/bash
+#!/bin/bash
+# Display first 2 lines of all config files
+for file in /etc/* # For all files in /etc
+do
+        if [[ "$file" == *"conf" ]] # need ]] for REGEX
+        then
+                head -n 2 "$file“
+                echo “-----------------------”
+        fi
+done

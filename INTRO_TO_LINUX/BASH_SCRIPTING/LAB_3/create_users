@@ -1,0 +1,10 @@
+#!/bin/bash
+# Script to create new user accounts
+input="users.csv" # realname,userid
+# IFS="," means separate by comma
+while IFS="," read -r realname userid
+do
+  echo "Adding $realname as $userid"
+  useradd -c "$realname" -m "$userid" # -c Specify real name, -m create user directory
+done < "$input"
+# Put quotes around things that MAY contain spaces in them like the realname.

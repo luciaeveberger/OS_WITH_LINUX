@@ -1,0 +1,9 @@
+#!/bin/bash
+num=10
+num2=5
+
+if [[ $num -lt 4 ]] && [[ $num2 -gt 1 ]]; then
+  echo "Here!"
+else
+  echo "Not here!"
+fi

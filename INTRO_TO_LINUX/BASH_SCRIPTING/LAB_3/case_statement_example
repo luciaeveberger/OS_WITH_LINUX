@@ -1,0 +1,14 @@
+#!/bin/bash
+echo -n "Do you agree with this? [yes or no]: "
+read yno
+case $yno in
+        [yY] | [yY][Ee][Ss] ) # y, Y, Yes, YES, yes
+                echo "Agreed"
+                ;;
+        [nN] | [n|N][O|o] ) # N, n, No, NO
+                echo "Not agreed, you can't proceed the installation";
+                exit 1 # Exits with status code 1 – failed.
+                ;;
+        *) echo "Invalid input“ # Anything else
+            ;;
+esac
