@@ -1,0 +1,8 @@
+#!/bin/bash
+input="users.csv" # realname,userid
+# IFS="," means separate by comma
+while IFS="," read -r realname userid
+do
+  echo "Adding $realname as $userid"
+  #useradd -c "$realname" -m "$userid" # -c Specify real name, -m create user directory
+done < "$input"

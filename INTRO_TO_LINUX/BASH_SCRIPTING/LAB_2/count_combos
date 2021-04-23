@@ -1,0 +1,13 @@
+#!/bin/bash
+# ABC -> AAA, AAB, AAC
+
+#for i1 in `cat one`
+#        do
+#                for i2 in `cat two`
+#                        do
+#                                for i3 in `cat three`
+#                                        do
+#                                                echo "$i1|$i2|$i3"
+#                                        done
+#                        done
+#        done

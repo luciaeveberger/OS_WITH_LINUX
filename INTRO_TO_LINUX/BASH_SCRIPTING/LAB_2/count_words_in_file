@@ -1,0 +1,9 @@
+#!/bin/bash
+file_name=$1
+while IFS="\n" read -r line
+do
+  echo $line
+    words=( $(< "$line") )
+    (( num += ${#words[@]} ))
+  #useradd -c "$realname" -m "$userid" # -c Specify real name, -m create user directory
+done < "$file_name"

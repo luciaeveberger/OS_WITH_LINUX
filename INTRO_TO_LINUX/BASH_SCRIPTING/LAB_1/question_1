@@ -1,0 +1,24 @@
+#!/bin/bash
+# 1.	Write a script to print out the numbers
+# and the squares of the numbers from 5 to 10. (will do in class) : print_number_and_squares
+ # need to use a control structure
+
+let x=5
+let end=10
+# will want to go up until 10
+#-lt:  x < y less than
+#-gt : x > y greater than
+#-ge: x >= y greater than or equal to
+# == : eq
+# != : ne
+if [ 10 -gt 5]
+fi
+
+
+while [ $x -le $end ];
+do
+  echo $x
+  let y = x*x
+  echo y
+  let x++
+done
