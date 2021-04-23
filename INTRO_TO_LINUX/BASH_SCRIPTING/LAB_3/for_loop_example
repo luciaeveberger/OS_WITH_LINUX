@@ -1,5 +1,8 @@
 #!/bin/bash
 
-
+for ELEMENT in { 0..5}
+do
+  echo $ELEMENT
+done
 
 
